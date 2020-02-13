@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #e3e4e5;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.jd-nav {
+  color: #999999;
+  font-size: 12px;
+  background-color: #e3e4e5;
+  height: 30px;
+  width: 1190px;
+  margin: 0 auto;
+}
+.jd-nav .jd-nav-location {
+  cursor: pointer;
+  float: left;
+  padding: 10px 0;
+}
+.jd-nav .jd-nav-location:hover {
+  color: #e1251b;
+}
+.jd-nav .jd-nav-main {
+  float: right;
+}
+.jd-nav .jd-nav-main span {
+  color: #e1251b;
+}
+.jd-nav .jd-nav-main li {
+  cursor: pointer;
+  float: left;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+.jd-nav .jd-nav-main li:not(:nth-child(1)) {
+  border-left: 1px solid #999999;
+}
+.jd-nav .jd-nav-main li .icon {
+  width: 1em;
+  height: 1em;
+}
+.jd-nav .jd-nav-main li:hover {
+  color: #e1251b;
+}
+
+.jd-serach {
+  height: 140px;
+  width: 100%;
+  padding: 0 0;
+  background-color: white;
+}
+.jd-serach .jd-logo {
+  float: left;
+  width: 180px;
+  height: 140px;
+}
+.jd-serach .jd-logo img {
+  width: 180px;
+  height: 130px;
+  margin-left: 0;
+}
+.jd-serach .midmain {
+  margin: 30px 0 0 0;
+  float: left;
+}
+.jd-serach .midmain .search {
+  margin-left: 63px;
+}
+.jd-serach .midmain .search .search-input input {
+  padding: 2px 44px 2px 17px;
+  float: left;
+  width: 488px;
+  height: 32px;
+  border: 3px solid #e1251b;
+  color: black;
+  outline: none;
+}
+.jd-serach .midmain .search .search-input input::placeholder {
+  color: #bbbbbb;
+}
+.jd-serach .midmain .search .search-input .search-icon {
+  float: left;
+  position: relative;
+  width: 58px;
+  height: 32px;
+  background-color: #e1251b;
+}
+.jd-serach .midmain .search .search-input .search-icon .icon {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+}
+.jd-serach .midmain .search .search-input .jd-shopcart {
+  margin-left: 19px;
+  border: 1px solid #bbbbbb;
+  float: left;
+  width: 132px;
+  height: 32px;
+  position: relative;
+}
+.jd-serach .midmain .search .search-input .jd-shopcart ::after {
+  content: "0";
+  color: white;
+  font-weight: bolder;
+  font-size: 12px;
+  background-color: #e1251b;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  padding-left: 6px;
+  padding-bottom: 3px;
+  border-radius: 8px;
+  top: 0;
+  left: 30px;
+}
+.jd-serach .midmain .search .search-input .jd-shopcart .icon {
+  margin-left: 20px;
+  width: 1em;
+  height: 1em;
+}
+.jd-serach .midmain .search .search-input .jd-shopcart a {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 10px;
+  color: #e1251b;
+  font-size: 12px;
+  font-weight: 100;
+}
+.jd-serach .midmain .search .search-recommend li {
+  float: left;
+  cursor: pointer;
+  font-size: 10px;
+  color: #bbbbbb;
+  margin-right: 12.5px;
+  margin-top: 8px;
+  font-weight: 100;
+}
+.jd-serach .midmain .search .search-recommend li:hover {
+  color: #e1251b;
+  font-weight: normal;
+}
+.jd-serach .midmain .search .search-recommend li:nth-child(1) {
+  color: #e1251b;
+  font-weight: normal;
+}
+.jd-serach .midmain .search-classify {
+  width: 758.11px;
+  padding: 20px 0 0 0;
+}
+.jd-serach .midmain .search-classify ul li {
+  cursor: pointer;
+  float: left;
+  font-size: 15px;
+  color: #333333;
+  font-weight: lighter;
+  margin: 0 11px;
+}
+.jd-serach .midmain .search-classify ul li:hover {
+  color: #e1251b;
+  font-weight: normal;
+}
+.jd-serach .midmain .search-classify ul li:nth-child(1), .jd-serach .midmain .search-classify ul li:nth-child(2) {
+  color: #e1251b;
+  font-weight: normal;
+}
+.jd-serach .adver {
+  float: left;
+}
+.jd-serach .adver img {
+  width: 180px;
+  height: 130px;
+}
+
+.jd-classfiy {
+  width: 1440px;
+  height: 480px;
+}
+.jd-classfiy .jd-classfiy-inner {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 1190px;
+  height: 480px;
+  margin: 0 auto;
+}
+.jd-classfiy .jd-classfiy-inner .left-side {
+  width: 190px;
+  height: 470px;
+  background-color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 0 10px 10px;
+}
+.jd-classfiy .jd-classfiy-inner .left-side ul li {
+  cursor: pointer;
+  float: left;
+  color: #333333;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 0px 0px 1px 8px;
+}
+.jd-classfiy .jd-classfiy-inner .left-side ul li:hover {
+  color: #e1251b;
+}
+.jd-classfiy .jd-classfiy-inner .goods-show {
+  width: 800px;
+  height: 470px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.jd-classfiy .jd-classfiy-inner .goods-show .goods-inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.jd-classfiy .jd-classfiy-inner .goods-show .goods-inner .slider_goods {
+  width: 590px;
+  height: 470px;
+  background-color: white;
+  margin-right: 10px;
+}
+.jd-classfiy .jd-classfiy-inner .goods-show .goods-inner .little_slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 190px;
+  height: 470px;
+}
+.jd-classfiy .jd-classfiy-inner .goods-show .goods-inner .little_slider .one-little-slider {
+  background-color: white;
+  width: 190px;
+  height: 150px;
+}
+.jd-classfiy .jd-classfiy-inner .personal {
+  margin-top: 10px;
+  width: 200px;
+  height: 470px;
+  background-color: white;
+}
+.jd-classfiy .jd-classfiy-inner .personal .personal-status {
+  width: 190px;
+  height: 106px;
+}
+.jd-classfiy .jd-classfiy-inner .personal .person-hr {
+  background: linear-gradient(to left, #efefef, #b6b6b6, #efefef);
+  height: 2px;
+}
+.jd-classfiy .jd-classfiy-inner .personal .jd-kuaibao {
+  width: 190px;
+  height: 130px;
+}
+.jd-classfiy .jd-classfiy-inner .personal .jd-live {
+  width: 190px;
+  height: 230px;
+}
+
+/*# sourceMappingURL=main.css.map */

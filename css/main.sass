@@ -1,0 +1,292 @@
+@function macs($n)
+  @return $n / 2
+
+$debug-border1: 1px solid red
+$debug-border2: 1px solid blue
+$debug-border3: 1px solid yellow
+$debug-border4: 1px solid black
+
+$background-color: #e1251b
+$nav-color: #e3e4e5
+$margin-left: 240px
+$theme-color: #e1251b
+$side-width: 360px
+$color-light: #bbbbbb
+$font-color: #333333
+
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+ul
+  list-style: none
+
+body
+  background-color: $nav-color
+
+.clearfix::after
+  content: ''
+  clear: both
+  display: block
+//以下适用<IE8
+//height: 0
+//visibility: hidden
+
+
+.jd-nav
+  color: #999999
+  font-size: macs(24px)
+  background-color: $nav-color
+  height: macs(60px)
+  width: 1190px
+  margin: 0 auto
+
+  .jd-nav-location
+    cursor: pointer
+    float: left
+    padding: macs(20px) 0
+
+    &:hover
+      color: $theme-color
+
+  .jd-nav-main
+    float: right
+    //margin-left: macs(600px)
+
+    span
+      color: $theme-color
+
+    li
+      cursor: pointer
+      float: left
+      margin: macs(20px) 0
+      padding: 0 macs(30px)
+
+      &:not(:nth-child(1))
+        border-left: 1px solid #999999
+
+      .icon
+        width: 1em
+        height: 1em
+
+      &:hover
+        color: $theme-color
+
+
+.jd-serach
+  height: macs(280px)
+  width: 100%
+  padding: 0 0
+  background-color: white
+
+  .jd-logo
+    float: left
+    width: macs($side-width)
+    height: macs(280px)
+
+    img
+      width: macs($side-width)
+      height: macs(260px)
+      margin-left: 0
+
+  .midmain
+    margin: 30px 0 0 0
+    float: left
+    //border: $debug-border2
+    .search
+      margin-left: macs(126px)
+
+      .search-input
+        input
+          padding: 2px 44px 2px 17px
+          float: left
+          width: 488px
+          height: 32px
+          border: 3px solid $theme-color
+          color: black
+          outline: none
+
+          &::placeholder
+            color: $color-light
+
+        .search-icon
+          float: left
+          position: relative
+          width: 58px
+          height: 32px
+          background-color: $theme-color
+
+          .icon
+            width: 1em
+            height: 1em
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            margin: auto auto
+
+        .jd-shopcart
+          margin-left: macs(38px)
+          border: 1px solid $color-light
+          float: left
+          width: 132px
+          height: 32px
+          position: relative
+
+          ::after
+            content: '0'
+            color: white
+            font-weight: bolder
+            font-size: 12px
+            background-color: $theme-color
+            width: 14px
+            height: 14px
+            position: absolute
+            padding-left: 6px
+            padding-bottom: 3px
+            border-radius: 8px
+            top: 0
+            left: 30px
+
+          .icon
+            margin-left: 20px
+            width: 1em
+            height: 1em
+
+          a
+            cursor: pointer
+            display: inline-block
+            margin-left: 10px
+            color: $theme-color
+            font-size: 12px
+            font-weight: 100
+
+      .search-recommend
+        li
+          float: left
+          cursor: pointer
+          font-size: macs(20px)
+          color: $color-light
+          margin-right: macs(25px)
+          margin-top: macs(16px)
+          font-weight: 100
+
+          &:hover
+            color: $theme-color
+            font-weight: normal
+
+          &:nth-child(1)
+            color: $theme-color
+            font-weight: normal
+
+    .search-classify
+      width: 758.11px
+      padding: 20px 0 0 0
+
+      ul
+        li
+          cursor: pointer
+          float: left
+          font-size: 15px
+          color: $font-color
+          font-weight: lighter
+          margin: 0 11px
+
+          &:hover
+            color: $theme-color
+            font-weight: normal
+
+          &:nth-child(1), &:nth-child(2)
+            color: $theme-color
+            font-weight: normal
+
+  .adver
+    float: left
+
+    img
+      width: macs($side-width)
+      height: macs(260px)
+
+
+.jd-classfiy
+  width: 1440px
+  height: 480px
+  .jd-classfiy-inner
+    //此处之后  消除我的bug？？？？？？？？？？？？？？？？？？？？？？？？？？？？
+    display: flex
+    justify-content: flex-start
+    flex-wrap: nowrap
+    width: 1190px
+    height: 480px
+    margin: 0 auto
+    .left-side
+      width: 190px
+      height: 470px
+      background-color: white
+      margin-top: 10px
+      margin-right: 10px
+      padding: 10px 0 10px 10px
+      ul
+        li
+          cursor: pointer
+          float: left
+          color: $font-color
+          font-weight: 300
+          font-size: 14px
+          padding: 0px 0px 1px 8px
+          &:hover
+            color: $theme-color
+
+    .goods-show
+      width: 800px
+      height: 470px
+      margin-top: 10px
+      margin-right: 10px
+      .goods-inner
+        display: flex
+        flex-wrap: nowrap
+        .slider_goods
+          width: 590px
+          height: 470px
+          background-color: white
+          margin-right: 10px
+        .little_slider
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          width: 190px
+          height: 470px
+          .one-little-slider
+            background-color: white
+            width: 190px
+            height: 150px
+
+    .personal
+      margin-top: 10px
+      width: 200px
+      height: 470px
+      background-color : white
+      .personal-status
+        //border: $debug-border2
+        width: 190px
+        height: 106px
+      .person-hr
+        background: linear-gradient(to left,#efefef,#b6b6b6,#efefef)
+        height: 2px
+      .jd-kuaibao
+        //border: $debug-border2
+        width: 190px
+        height: 130px
+      .jd-live
+        //border: $debug-border2
+        width: 190px
+        height: 230px
+
+
+
+
+
+
