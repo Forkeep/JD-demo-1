@@ -266,13 +266,23 @@ body
 
     .personal
       margin-top: 10px
-      width: 200px
+      width: 190px
       height: 470px
       background-color : white
       .personal-status
         //border: $debug-border2
         width: 190px
         height: 106px
+        .personal-status-on
+          border: $debug-border1
+          width: 190px
+          height: 76px
+        .personal-vip
+          border: $debug-border1
+
+          width: 100%
+          height: 30px
+
       .person-hr
         background: linear-gradient(to left,#efefef,#b6b6b6,#efefef)
         height: 2px
@@ -284,6 +294,258 @@ body
         //border: $debug-border2
         width: 190px
         height: 230px
+
+
+.jd-seckill
+  width: 1440px
+  height: 260px
+  .jd-seckill-inner
+    margin: 20px auto 0 auto
+    width: 1190px
+    height: 260px
+    display: flex
+    flex-direction: row
+    .seckill-timer
+      width: 190px
+      height: 260px
+      background-color: red
+    .seckill-goods
+      width: 800px
+      height: 260px
+      background-color: white
+    .seckill-kinds
+      width: 200px
+      height: 260px
+      background-color: gray
+
+
+.jd-sale-shangou
+  width: 1440px
+  height: 340px
+  .jd-sale-shangou-inner
+    width: 1190px
+    height: 340px
+    margin: 20px auto 0 auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .jd-sale
+      width: 590px
+      height: 340px
+      border: $debug-border4
+    .jd-shangou
+      width: 590px
+      height: 340px
+      border: $debug-border4
+
+
+
+.jd-findgood
+  width: 1440px
+  height: 260px
+  .jd-findgood-inner
+    margin: 20px auto 0 auto
+    width: 1190px
+    height: 260px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .findgood-title
+      width: 190px
+      height: 260px
+      background-color: black
+    .findgood-goods
+      width: 990px
+      height: 260px
+      background-color: white
+
+
+.jd-core2
+  width: 1440px
+  height: 340px
+  .jd-core2-inner
+    width: 1190px
+    height: 340px
+    margin: 20px auto 0 auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .new-goods
+      width: 290px
+      height: 340px
+      background-color: white
+    .rank-list
+      width: 290px
+      height: 340px
+      background-color: white
+    .good-store
+      width: 290px
+      height: 340px
+      background-color: white
+    .coupon-center
+      width: 290px
+      height: 340px
+      background-color: white
+
+
+.jd-title-pindao
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  border: $debug-border1
+  width: 1190px
+  height: 45px
+  margin: 20px auto 0 auto
+  text-align: center
+  color: #333333
+  font-size: 15px
+  .pindao-before
+    width: 20px
+    height: 7px
+    border-radius: 5px
+    background-color: $color-light
+    transform: rotate(-45deg)
+  .pindao-before2
+    width: 13px
+    height: 5px
+    border-radius: 5px
+    background-color: $color-light
+    transform: rotate(-45deg)
+  .pindao-after
+    width: 20px
+    height: 7px
+    border-radius: 5px
+    background-color: $color-light
+    transform: rotate(-45deg)
+  .pindao-after2
+    width: 13px
+    height: 5px
+    border-radius: 5px
+    background-color: $color-light
+    transform: rotate(-45deg)
+  h1
+    margin: 0 20px
+
+
+
+.jd-pindao-park
+  width: 1440px
+  height: 760px
+  .jd-pindao-park-inner
+    width: 1190px
+    height: 760px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin: 20px auto 0 auto
+    .pindao-floor
+      width: 1190px
+      height: 180px
+      border : $debug-border1
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      .pindao-item
+        width: 290px
+        height: 180px
+        background-color: white
+
+
+
+
+.jd-recommend-tab
+  width: 1440px
+  height: 60px
+  .jd-recommend-tab-inner
+    background-color: white
+    width: 1190px
+    height: 60px
+    margin: 20px auto 0 auto
+    .jd-recommend-tab-inner-inner
+      border: 1px solid red
+      margin: 20px auto 0 auto
+      width: 1100px
+      height: 60px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      .recommend-tab-title
+        border: 1px solid black
+        width: 180px
+        height: 40px
+
+
+
+
+.jd-recommend-items
+  width: 1440px
+  height: 1328px
+  .jd-recommend-items-inner
+    width: 1190px
+    height: 1328px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin: 20px auto 0 auto
+    .recommend-items-floor
+      width: 1190px
+      height: 322px
+      border: 1px solid yellow
+      .recommend-item-inner
+        width: 1190px
+        height: 322px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .recommend-item
+          width: 230px
+          height: 322px
+          border: $debug-border4
+
+
+.jd-service
+  width: 1440px
+  height: 42px
+  .jd-service-inner
+    width: 1190px
+    height: 42px
+    margin: 30px auto 30px auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .service-item
+      width: 279px
+      height: 42px
+      border: $debug-border2
+
+
+
+.jd-help
+  width: 1440px
+  height: 200px
+  .jd-help-inner
+    width: 1190px
+    height: 200px
+    margin: 30px auto 30px auto
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    .help-item
+      width: 200px
+      height: 200px
+      border: $debug-border4
+
+
+
+
+
+
+
+
+
+
 
 
 
